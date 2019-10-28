@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="WeatherTableViewCell" customModule="Forecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMB-pz-Eoi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6iw-Xc-XJa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-U9-UMI">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-V3-ykz">
+                                                <rect key="frame" x="16" y="0.0" width="136" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vnc-V3-ykz" firstAttribute="leading" secondItem="Ci2-U9-UMI" secondAttribute="leading" constant="16" id="GTT-lr-Z6E"/>
+                                            <constraint firstAttribute="trailing" secondItem="vnc-V3-ykz" secondAttribute="trailing" constant="8" id="Hwm-4J-vKe"/>
+                                            <constraint firstAttribute="bottom" secondItem="vnc-V3-ykz" secondAttribute="bottom" id="aQD-lq-g64"/>
+                                            <constraint firstItem="vnc-V3-ykz" firstAttribute="top" secondItem="Ci2-U9-UMI" secondAttribute="top" id="fcz-6k-WyL"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rX5-sr-sgC">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJG-g2-DCS">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5N-SA-8WW">
+                                                <rect key="frame" x="80" y="0.0" width="80" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6iw-Xc-XJa" firstAttribute="leading" secondItem="kMB-pz-Eoi" secondAttribute="leading" id="OeD-u5-fIw"/>
+                            <constraint firstAttribute="bottom" secondItem="6iw-Xc-XJa" secondAttribute="bottom" id="eJo-Ch-u2Z"/>
+                            <constraint firstItem="6iw-Xc-XJa" firstAttribute="top" secondItem="kMB-pz-Eoi" secondAttribute="top" id="eqB-Wu-fYi"/>
+                            <constraint firstAttribute="trailing" secondItem="6iw-Xc-XJa" secondAttribute="trailing" id="jYz-z7-sg7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kMB-pz-Eoi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Bc-c2-3vM"/>
+                    <constraint firstAttribute="trailing" secondItem="kMB-pz-Eoi" secondAttribute="trailing" id="XU2-LK-dfp"/>
+                    <constraint firstItem="kMB-pz-Eoi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oKo-cr-uFU"/>
+                    <constraint firstAttribute="bottom" secondItem="kMB-pz-Eoi" secondAttribute="bottom" id="wUd-vT-uPg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="vnc-V3-ykz" id="vE9-9Y-DlU"/>
+                <outlet property="highestTempLabel" destination="qJG-g2-DCS" id="aai-BX-e1A"/>
+                <outlet property="lowestTempLabel" destination="L5N-SA-8WW" id="3HR-pF-sjr"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="139.28571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
