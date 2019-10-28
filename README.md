@@ -1,9 +1,7 @@
     Forecast App
 
     How to build:
-    1. Open terminal and root to the directory where the project is located
-    2. Run 'pod install'
-    3. Open Forecast.xcworkspace then build and run
+    Open Forecast.xcodeproj then build and run
 
     How to test:
     For Today Tab:
